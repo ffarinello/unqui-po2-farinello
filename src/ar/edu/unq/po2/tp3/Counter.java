@@ -24,3 +24,4 @@ public class Counter {
 		return numero % otroNumero == 0;
 	}
 }
+
