@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Counter {
 	
-		private List<Integer> secuencia = new ArrayList<Integer>();
+		private List<Integer> secuencia = new ArrayList<>();
 	
 		// getter list
 	public List<Integer> getSecuencia(){
@@ -17,7 +17,7 @@ public class Counter {
 		 */
 	public int contarPares(){
 		return (int) this.getSecuencia().stream()
-				.filter(numero -> numero.divisiblePor(numero, 2))
+				.filter(numero -> numero % 2 == 0)//.divisiblePor(, 2))
 				.count();
 	}
 		/*
