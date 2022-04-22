@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp3;
+package ar.edu.unq.po2.tp3.ejercicio3;
 
 public class Multiplos {
 	
@@ -20,6 +20,6 @@ public class Multiplos {
 	private void contarACero(int maximoActual2) {
 		// TODO Auto-generated method stub
 		
-	}
+}
 
 
