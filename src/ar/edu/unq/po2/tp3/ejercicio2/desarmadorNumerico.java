@@ -6,11 +6,37 @@ import java.util.List;
 public class desarmadorNumerico {
 	
 	/** recibe un arreglo de numeros enteros y devuelve 
-	 *    el número que más digitos pares contenga. 
+	 *    el numero que mas digitos pares contenga. 
 	*/
 	
 	private List<Integer> arreglo = new ArrayList<>();
+	int numero = 0;
 	
-	// dividir digitos, dividiendo por 10 para correr la coma.
+	/* 
+	 ESTRATEGIA 
+	    * si es par, sumar
+	    * dividir por 10 para correr la coma.	
+	    * 
+	*/
 	
+	public List<Integer> getArreglo(){
+		// getter de lista
+		return arreglo;
+	}
+	
+	public boolean esPar(int numero) {
+		// indica si el numero dado es par
+		return numero % 2 == 0;
+	}
+	
+	public int sumarSi(int numero, boolean condicion) {
+		return 
+	}
+	
+	public void desarmar() {
+		// elimina el �ltimo digito del numero dado, hasta llegar a 0.
+		while (numero>0) {
+			numero = numero/10;
+		}
+	}
 }
