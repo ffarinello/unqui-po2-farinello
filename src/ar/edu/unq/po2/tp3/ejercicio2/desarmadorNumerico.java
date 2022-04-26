@@ -11,6 +11,7 @@ public class desarmadorNumerico {
 	
 	private List<Integer> arreglo = new ArrayList<>();
 	int numero = 0;
+	int cantDePares = 0
 	
 	/* 
 	 ESTRATEGIA 
@@ -30,7 +31,7 @@ public class desarmadorNumerico {
 	}
 	
 	public int sumarSi(int numero, boolean condicion) {
-		return 
+		if(this.esPar(numero)) cantDePares += 1;
 	}
 	
 	public void desarmar() {
