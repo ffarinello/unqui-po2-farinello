@@ -5,10 +5,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import ar.edu.unq.po2.tp3.ejercicio1.Counter;
+import ar.edu.unq.po2.tp3.ejercicio3.Multiplos;
 
 public class CounterTestCase {
 	private Counter counter;
-
+	
 /**
 * Crea un escenario de test básico, que consiste en un contador
 * con 10 enteros
@@ -32,9 +33,8 @@ counter.addNumber(1);
 counter.addNumber(4);
 }
 
-/**
-* Verifica la cantidad de pares
-*/
+// Verifica la cantidad de pares
+
 
 	@Test
 	public void testCantidadDePares() {
@@ -44,9 +44,8 @@ counter.addNumber(4);
 	assertEquals(amount, 1);
 	}
 
-/**
-* Verifica la cantidad de impares
-*/
+// Verifica la cantidad de impares
+
 
 	@Test
 	public void testCantidadDeImpares() {
@@ -56,9 +55,8 @@ counter.addNumber(4);
 	assertEquals(amount, 9);
 	}
 
-	/**
-* Verifica la cantidad de multiplos de 4
-*/
+// Verifica la cantidad de multiplos de 4
+
 	
 	@Test
 	public void testCantidadDeMultiplos() {
@@ -66,5 +64,15 @@ counter.addNumber(4);
 	Integer amount = counter.contarMultiplos(4);		
 		// I check the amount is the expected one
 	assertEquals(amount, 1);
+	}
+
+// multiplo más alto entre X e Y;
+
+	@Test
+	public void mutiploMaximo() {
+	// Getting the even occurrences
+		Integer amount = Multiplos.multiploMayorEntre(2, 3);
+		amount = // I check the amount is the expected one
+		assertEquals(amount, 999);
 	}
 }

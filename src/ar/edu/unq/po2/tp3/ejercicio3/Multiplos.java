@@ -3,23 +3,30 @@ package ar.edu.unq.po2.tp3.ejercicio3;
 public class Multiplos {
 	
 	public int multiploMayorEntre(int x, int y) {
+		// devuelva el número más alto entre 0 y 1000, que sea múltiplo simultáneamente de X e Y, sino 999.
 		
-		public int maximoActual = 1000
+		int maximoActual = 1000;
 		
-		while (this.divisiblePor(maximoActual, x) & this.divisiblePor(maximoActual, y)); {
-			this.contarACero(maximoActual);
+		while (this.sonMultiplos(maximoActual, x, y)) {
+			maximoActual = maximoActual - 1;
 			}
-			return numeroActual
-					
-			}
+			return this.resultado(maximoActual);
+		}
 	
-	public boolean divisiblePor(int numero, int otroNumero) {
-		return numero % otroNumero == 0;
+	public int resultado(int numero) {
+		
+	      if(numero>0)
+	    	  return numero; 
+	      else 
+	    	  return 999;
 	}
 
-	private void contarACero(int maximoActual2) {
-		// TODO Auto-generated method stub
-		
+	public boolean sonMultiplos(int numeroAComparar, int numero, int otroNumero) {
+		return this.esMultiploDe(numeroAComparar, numero) & 
+			   this.esMultiploDe(numeroAComparar, otroNumero);
+	}
+	
+	public boolean esMultiploDe(int numero, int otroNumero) {
+		return numero % otroNumero == 0;
+	}
 }
-
-
