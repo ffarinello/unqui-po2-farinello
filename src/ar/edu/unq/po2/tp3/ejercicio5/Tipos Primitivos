@@ -1,0 +1,19 @@
+1. ¿Qué son los tipos de datos primitivos?
+
+	Los datos primitivos son tipos simples de datos que representan un valor literal o conjunto.
+
+2. ¿Cuál es la diferencia entre un int y un Integer?
+
+	Tanto int como Integer representan el mismo tipo de dato, con la diferencia en que, 
+	int es un número entero e Integer, es un objeto o clase que hace referencia al número.
+	
+3. ¿Si se define una variable de instancia de tipo int cuál sería su valor predeterminado? 
+		0 - igual no se como probarlo
+		
+¿Y si se define una de tipo Integer? Haga la prueba en Eclipse.
+		null - tampoco se como probarlo.
+
+4. Responder la pregunta del punto anterior (3), pero ahora en lugar de definir una 
+	variable de instancia se define una variable de método.
+	
+		null en ambos casos porq no están inicializados.
