@@ -1,4 +1,4 @@
-package ar.unq.edu.po2.tp3.test;
+package ar.edu.unq.po2.tp3;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -67,7 +67,8 @@ counter.addNumber(4);
 	}
 
 // multiplo más alto entre X e Y;
-
+	
+/*
 	@Test
 	public void mutiploMaximo() {
 	// Getting the even occurrences
@@ -75,4 +76,5 @@ counter.addNumber(4);
 		amount = // I check the amount is the expected one
 		assertEquals(amount, 999);
 	}
+*/
 }

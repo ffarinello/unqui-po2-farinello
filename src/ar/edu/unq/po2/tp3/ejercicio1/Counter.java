@@ -1,17 +1,17 @@
 package ar.edu.unq.po2.tp3.ejercicio1;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Counter {
 	
-		private List<Integer> secuencia = new ArrayList<>();
+	public static void main(String[] args) {
+		ArrayList<Integer> secuencia = new ArrayList<>();
+	}
 	
 		// getter list
-	public List<Integer> getSecuencia(){
-		return this.secuencia;
+	public ArrayList<Integer> getSecuencia(){
+		return this.getSecuencia();
 	}
-		
 		/*
 		 * Contar la cantidad de numeros pares de la secuencia
 		 */
@@ -25,7 +25,7 @@ public class Counter {
 		 */
 	public int contarImpares(){
 		return (int) this.getSecuencia().stream()
-				.filter(numero -> !numero.divisiblePor(numero, 2))
+				.filter(numero -> !divisiblePor(numero, 2))
 				.count();
 	}
 		/*
@@ -39,12 +39,12 @@ public class Counter {
 		/*
 		 * indicar si los números dados son múltiplos
 		 */
-	public boolean divisiblePor(Integer numero, int otroNumero) {
+	public boolean divisiblePor(int numero, int otroNumero) {
 		return numero % otroNumero == 0;
 	}
 
 	public Counter addNumber(Integer numero) {
-		this.secuencia.add(numero);
+		this.getSecuencia().add(numero);
 		return this;		
 	}
 }
