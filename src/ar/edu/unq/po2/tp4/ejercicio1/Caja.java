@@ -8,25 +8,22 @@ public class Caja {
 	
 	private float totalAPagar = 0;
 
+		// registra el producto y le informa al cliente lo que tiene que pagar.
+	
 	public void registrarProducto(Producto producto, Mercado mercado, Cliente cliente) {
-			/* Registrar un producto implica: 
-					* registrarlo en la nuevaCompra
-					* descontar el producto del stock del mercado
-					* 
-			*/
 		this.registrar(mercado, producto);
 		this.informarSaldo(cliente);
-		/*
-		mercado.descontarProducto(producto);
-		cliente.setSaldoAPagar(producto);
-		*/
 	}
+	
+		//	registra el producto y le informa al mercado el producto comprado.
 	
 	public void registrar(Mercado mercado, Producto producto) {
 		listaDeProductos.add(producto);
 		totalAPagar += producto.getPrecio();
 		mercado.decrementarStock(producto);
 	}
+	
+		// informa el saldo a pagar al cliente.
 	
 	private void informarSaldo(Cliente cliente) {
 		cliente.saldoAPagar = totalAPagar;
