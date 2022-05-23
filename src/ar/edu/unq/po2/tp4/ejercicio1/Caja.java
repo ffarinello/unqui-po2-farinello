@@ -8,14 +8,14 @@ public class Caja {
 	
 	private float totalAPagar = 0;
 
-		// registra el producto y le informa al cliente lo que tiene que pagar.
+		// Register a product and communicate its value to the customer.
 	
 	public void registrarProducto(Producto producto, Mercado mercado, Cliente cliente) {
 		this.registrar(mercado, producto);
 		this.informarSaldo(cliente);
 	}
 	
-		//	registra el producto y le informa al mercado el producto comprado.
+		//	Register a purchased product and communicate its to the market.
 	
 	public void registrar(Mercado mercado, Producto producto) {
 		listaDeProductos.add(producto);
@@ -23,7 +23,7 @@ public class Caja {
 		mercado.decrementarStock(producto);
 	}
 	
-		// informa el saldo a pagar al cliente.
+		// Communicate the value of the product to the customer.
 	
 	private void informarSaldo(Cliente cliente) {
 		cliente.saldoAPagar = totalAPagar;

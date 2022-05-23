@@ -1,26 +1,8 @@
-package unqui.po2.tp4;
+package ar.edu.unq.po2.tp4.ejercicio1;
 
-import unqui.po2.tp4.Producto;
-
-public class Producto {
+public abstract class Producto {
 	
-	public double precioBase;
+	double precioBase;
 	
-	public void setPrecio(float precio){
-		precioBase = precio;
-	}
-	
-	public double getPrecio() {
-		return precioBase;
-	}
+	public abstract double getPrecio();
 }
-
-public class ProductoTradicional extends Producto{
-	
-	private double iva = 1.10;
-
-	public double impuestoIVA() {
-		return precioBase * 0.10;
-	}
-}
-public class ProductoCooperativo extends Producto{}

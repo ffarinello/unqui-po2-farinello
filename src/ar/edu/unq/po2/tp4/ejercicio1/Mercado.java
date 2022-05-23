@@ -4,11 +4,16 @@ import java.util.ArrayList;
 
 public class Mercado {
 	
-	ArrayList<Producto> stock = new ArrayList<>();
+	ArrayList<Producto> mercado = new ArrayList<>();
 	
-		// descuenta el producto del stock del mercado.
-	public void decrementarStock(Producto producto) {
-		stock.remove(producto);
+	public void agregaProducto(Producto producto) {
+		mercado.add(producto);
 	}
+	
+		// discount the product for the stock market.
+	public void decrementarStock(Producto producto) {
+		mercado.remove(producto);
+	}
+	
 	
 }

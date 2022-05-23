@@ -19,3 +19,39 @@ Productos
 		
 		**producto de empresa tradicional
 */	
+
+
+
+//package ar.edu.unq.po2.tp4.ejercicio1;
+
+//public class Producto {
+//	
+//	public float precioBase;
+//	
+//	public void setPrecio(float precio){
+//		precioBase = precio;
+//	}
+//	
+//	public float getPrecio() {
+//		return precioBase;
+//	}
+//}
+
+/*
+public class Tradicional{
+	
+	private double impuestoIVA = 1.10;
+
+	public double costoProducto(){
+		return precioBase * impuestoIVA;
+	}
+}
+
+public class Cooperativo{
+	
+	@Override
+	public double costoProducto(){
+		return super()
+	}
+}
+*/
